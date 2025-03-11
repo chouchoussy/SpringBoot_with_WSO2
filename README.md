@@ -34,6 +34,8 @@ WSO2 Identity Server hỗ trợ OIDC như một giao thức mặc định, và n
 #### Thêm ứng dụng vào WSO2 
 - Tại mục Application, chọn ``` New Application ``` và thêm ứng dụng mới 
   ![image](https://github.com/user-attachments/assets/013a2f1d-88de-407b-b820-b2a0d2660336)
+- Thêm logout URL vào ứng dụng
+  ![image](https://github.com/user-attachments/assets/7873513a-656b-495c-8212-fda8383b07ff)
 - Vào mục ``` Protocol ``` của ứng dụng vừa tạo để lưu ``` clientID ``` và ```client secret```
   ![image](https://github.com/user-attachments/assets/0c8cdbe8-c25e-4004-b053-32565c401848)
 - Cấu hình thư mục application properties theo mã vừa lưu
@@ -49,7 +51,8 @@ WSO2 Identity Server hỗ trợ OIDC như một giao thức mặc định, và n
   spring.security.oauth2.client.provider.wso2.user-info-uri=https://localhost:9443/oauth2/userinfo
   spring.security.oauth2.client.provider.wso2.jwk-set-uri=https://localhost:9443/oauth2/jwks
   spring.security.oauth2.client.provider.wso2.user-name-attribute=sub
-  server.port=8080 ```
+  server.port=8080
+  ```
 
 ## Cấu hình SSL 
 #### Xuất chứng chỉ từ WSO2 
