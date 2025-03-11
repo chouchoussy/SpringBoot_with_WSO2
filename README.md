@@ -18,6 +18,7 @@
 - Tại mục Application, chọn ``` New Application ``` và thêm ứng dụng mới 
   ![image](https://github.com/user-attachments/assets/013a2f1d-88de-407b-b820-b2a0d2660336)
 - Vào mục ``` Protocol ``` của ứng dụng vừa tạo để lưu ``` clientID ``` và ```client secret```
+  ![image](https://github.com/user-attachments/assets/0c8cdbe8-c25e-4004-b053-32565c401848)
 - Cấu hình thư mục application properties theo mã vừa lưu
   ```
   spring.security.oauth2.client.registration.wso2.client-id=S0sw95ESZYWz4y99aKei_EpetkAa
