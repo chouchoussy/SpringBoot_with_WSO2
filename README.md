@@ -1,5 +1,14 @@
 # TẠO TRANG ĐĂNG NHẬP ỨNG DỤNG SPRINGBOOT VỚI WSO2 
+## GIỚI THIỆU 
+- Sử dụng **OpenID Connect (OIDC)** làm giao thức xác thực để tích hợp giữa ứng dụng Spring Boot và WSO2 Identity Server
+OpenID Connect là một lớp xác thực xây dựng trên OAuth 2.0, cung cấp khả năng xác thực người dùng và trao đổi thông tin nhận dạng (identity) một cách an toàn.
+WSO2 Identity Server hỗ trợ OIDC như một giao thức mặc định, và nó thường được sử dụng khi bạn cần xác thực người dùng (authentication) cùng với quyền truy cập tài nguyên (authorization).
 
+## Quy trình làm việc 
+- Khi người dùng truy cập ``` http://localhost:8080/login ``` , Spring Boot sẽ chuyển hướng đến trang đăng nhập của ``` WSO2 ``` qua endpoint ``` authorization-uri ```.
+- Sau khi người dùng đăng nhập, WSO2 trả về một ID Token (một loại JWT) cùng với Access Token, đây là đặc trưng của OIDC.
+- Spring Boot sử dụng thông tin này để xác thực người dùng và hiển thị trang home.
+  
 ## Cài đặt WSO2
 #### Cài đặt WSO2 
 - Cài đặt WSO2 tại trang ```https://wso2.com/ ```
