@@ -77,9 +77,13 @@ cd ~/wso2is/wso2is-7.1.0/bin
 ```
 cd ~/spring-boot-wso2
 mvn spring-boot:run
-```
-![image](https://github.com/user-attachments/assets/154c847f-41f4-4a56-84f5-63921b9f3bd7)
-![image](https://github.com/user-attachments/assets/4afeb575-71e3-4358-8d39-bf10c41419c2)
+``` 
+- Truy cập ``` http://localhost:8080/login ```
+![image](https://github.com/user-attachments/assets/ff1a20e4-8862-43db-acbc-db5835bcbb19)
+- Đăng nhập hiển thị home
+![image](https://github.com/user-attachments/assets/0db01f8f-0cb2-4d91-8b6d-daa1f619ca93)
+
+
 
 
 
